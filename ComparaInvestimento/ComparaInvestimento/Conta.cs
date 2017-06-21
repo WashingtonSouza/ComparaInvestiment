@@ -24,9 +24,9 @@ namespace ComparaInvestimento
 
                 var dataAtual = DateTime.Now;
 
-                Console.WriteLine("No mês {0} o rendimento será de {1}", new DateTime(dataAtual.Year, i, dataAtual.Day).ToString("MMM"), jurosMensal.ToString("0.##"));
+                Console.WriteLine("No mês {0} o rendimento será de {1} ", new DateTime(dataAtual.Year, i, dataAtual.Day).ToString("MMM"), jurosMensal.ToString("0.##"));
 
-                valorTotal += Convert.ToDouble(jurosMensal.ToString("0.##"));
+                valorTotal += Convert.ToDouble(jurosMensal.ToString("0.##" ));
             }
         }
 
