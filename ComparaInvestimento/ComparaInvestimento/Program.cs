@@ -26,7 +26,7 @@ namespace ComparaInvestimento
             CP.PreencherConta(C);
             RF.PreencherConta(C);
 
-            RF.CalculaInvestimento();
+            RF.CalculaInvestimento(); 
             CP.CalculaInvestimento();
 
             Console.WriteLine("==============================================================================\n");

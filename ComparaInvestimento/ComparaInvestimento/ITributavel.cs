@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ComparaInvestimento
 {
     interface ITributavel
-    {
+    { 
         void CalculaIR();
     }
 }

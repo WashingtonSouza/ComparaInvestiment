@@ -9,7 +9,7 @@ namespace ComparaInvestimento
     class Investimento : Conta, ITributavel
     {
         public double valorComIR;
-
+         
         public override void CalculaInvestimento()
         {
             Console.WriteLine("\n");

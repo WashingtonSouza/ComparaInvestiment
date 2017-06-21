@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComparaInvestimento
 {
-    class ContaPoupanca : Conta
+    class ContaPoupanca : Conta 
     {
         public double JurosPoup = 0.5;
 
