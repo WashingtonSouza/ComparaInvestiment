@@ -1,0 +1,6 @@
+c:\users\washington.souza\documents\visual studio 2017\Projects\ComparaInvestimento\ComparaInvestimento\bin\Debug\ComparaInvestimento.exe.config
+c:\users\washington.souza\documents\visual studio 2017\Projects\ComparaInvestimento\ComparaInvestimento\bin\Debug\ComparaInvestimento.exe
+c:\users\washington.souza\documents\visual studio 2017\Projects\ComparaInvestimento\ComparaInvestimento\bin\Debug\ComparaInvestimento.pdb
+c:\users\washington.souza\documents\visual studio 2017\Projects\ComparaInvestimento\ComparaInvestimento\obj\Debug\ComparaInvestimento.csprojResolveAssemblyReference.cache
+c:\users\washington.souza\documents\visual studio 2017\Projects\ComparaInvestimento\ComparaInvestimento\obj\Debug\ComparaInvestimento.exe
+c:\users\washington.souza\documents\visual studio 2017\Projects\ComparaInvestimento\ComparaInvestimento\obj\Debug\ComparaInvestimento.pdb
