@@ -8,18 +8,17 @@ namespace ComparaInvestimento
 {
     class ContaPoupanca : Conta 
     {
-        public double JurosPoup = 0.5;
+        public IList<double> ListJurosPoupanca = new List<double>();
+        public double JurosPoupanca { get; set; }
 
         public override void CalculaInvestimento()
         {
             Console.WriteLine("\n");
 
-            taxaJuros = JurosPoup;
+            TaxaJuros = JurosPoupanca;
 
             base.CalculaInvestimento();
 
-            Console.WriteLine("O investimento Total da aplicação na Conta Poupança é: {0} \n", valorTotal);
-            Console.WriteLine("==============================================================================\n");
         }
     }
 }

@@ -8,34 +8,32 @@ namespace ComparaInvestimento
 {
     public class Conta
     {
-        public double valorInvestimento;
-        public int qtdMes;
-        public double taxaJuros;
-        public double valorTotal;
-        private double jurosMensal;
+        public double ValorInvestimento;
+        public int QuantidadeMes;
+        public double TaxaJuros;
+        public double ValorTotal;
+        public IList<double> JurosMensal = new List<double>();
+        public double Juros;
         
         public virtual void CalculaInvestimento()
         {
-            valorTotal = valorInvestimento;
+            ValorTotal = ValorInvestimento;
 
-            for (int i = 1; i <= qtdMes; i++)
+            for (int i = 1; i <= QuantidadeMes; i++)
             {
-                jurosMensal = (valorTotal * taxaJuros) / 100;
+                this.Juros = (ValorTotal * TaxaJuros) / 100;
+                JurosMensal.Add(Juros);
 
-                var dataAtual = DateTime.Now;
-
-                Console.WriteLine("No mês {0} o rendimento será de {1} ", new DateTime(dataAtual.Year, i, dataAtual.Day).ToString("MMM"), jurosMensal.ToString("0.##"));
-
-                valorTotal += Convert.ToDouble(jurosMensal.ToString("0.##" ));
+                ValorTotal += Convert.ToDouble(Juros.ToString("0.##" ));
             }
         }
 
         public void PreencherConta(Conta conta)
         {
-            valorInvestimento = conta.valorInvestimento;
-            qtdMes = conta.qtdMes;
-            taxaJuros = conta.taxaJuros;
-            valorTotal = conta.valorTotal;
+            ValorInvestimento = conta.ValorInvestimento;
+            QuantidadeMes = conta.QuantidadeMes;
+            TaxaJuros = conta.TaxaJuros;
+            ValorTotal = conta.ValorTotal;
         }
     }
 }
